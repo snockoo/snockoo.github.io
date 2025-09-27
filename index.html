@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Setiawan's Portfolio</title>
-    <!-- Use Tailwind CSS for modern, responsive styling -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,15 @@
 </head>
 <body class="bg-slate-900 text-gray-200">
 
+    <!-- Blurry Gradient Background -->
+    <div class="absolute inset-0 -z-10">
+        <div class="w-full h-full">
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 blur-3xl opacity-60"
+                 style="width: 120vw; height: 120vh; background: radial-gradient(circle at 40% 30%, #2f3074 0%, #202235 40%, #0f172a 100%);">
+            </div>
+        </div>
+    </div>
+
     <!-- Header and Navigation -->
     <header class="bg-slate-800 shadow-lg sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -38,7 +47,7 @@
 
             <!-- Mobile menu button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-50 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
@@ -55,7 +64,7 @@
 
         <!-- Hero Section -->
         <section id="hero" class="py-24 text-center">
-            <div class="flex flex-col items-center animate-fadeIn">
+            <div class="flex flex-col items-center animate-fadeIn bg-slate-800/70 backdrop-blur-xl rounded-3xl shadow-2xl p-10">
                 <img src="https://snockoo.github.io/face.png" alt="Your Photo" class="w-36 h-36 rounded-full mb-6 ring-4 ring-indigo-500/50 object-cover">
                 <h1 class="text-5xl md:text-6xl font-extrabold text-gray-50 mb-4 drop-shadow-md">
                     Hello, I'm <span class="text-indigo-400">Samuel Setiawan</span>.
