@@ -3783,3 +3783,54 @@ input, select, textarea {
 			}
 
 		}
+
+/* Experience Section */
+.experience-card {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 2.5em;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.experience-card h3 {
+    margin: 0 0 0.3em 0;
+    color: #636363;
+}
+
+.experience-card h4 {
+    margin: 1.5em 0 0.5em 0;
+    color: #636363;
+}
+
+.experience-date {
+    color: #999999;
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+
+.experience-list {
+    margin: 0 0 1.5em 1.2em;
+}
+
+.experience-list li {
+    margin-bottom: 0.6em;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+}
+
+.tech-stack span {
+    background: #f4f4f4;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    padding: 0.35em 0.9em;
+    font-size: 0.9em;
+    color: #555555;
+}
